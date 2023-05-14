@@ -8,18 +8,16 @@
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
 
-    <color name="layout_background_color">#FFFFFF</color>
-    <color name="header_text_color">#000000</color>
-    <color name="switch_text_color">#000000</color>
-    <color name="switch_thumb_color">#CCCCCC</color>
-    <color name="switch_track_color">#E0E0E0</color>
-    <color name="edittext_text_color">#000000</color>
-    <color name="edittext_hint_color">#8E8E8E</color>
-    <color name="edittext_background_color">#FFFFFF</color>
+    <color name="layout_background_color">#333333</color>
+    <color name="header_text_color">#FFFFFF</color>
+    <color name="switch_text_color">#FFFFFF</color>
+    <color name="switch_thumb_color">#FFFFFF</color>
+    <color name="switch_track_color">#CCCCCC</color>
+    <color name="edittext_text_color">#FFFFFF</color>
+    <color name="edittext_hint_color">#CCCCCC</color>
+    <color name="edittext_background_color">#333333</color>
     <color name="icon_border_color">#FF0000</color>
     <color name="icon_arc_color">#FFFFFF</color>
     <color name="icon_background_color">#C0C0C0</color>
     <color name="icon_circle_background_color">#D3D3D3</color>
-
-
 </resources>

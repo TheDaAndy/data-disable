@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">disableData</string>
+    <string name="delay_time">Delay Time</string>
+    <string name="restore_previous_settings">Restore previous settings</string>
+    <string name="enable_mobile_data_service">Enable Mobile-Data service</string>
+    <string name="enable_wlan_service">Enable WLAN service</string>
+    <string name="delay_time_label">Delay Time</string>
+    <string name="delay_time_hint">Enter the delay time</string>
+    <string name="delay_time_unit">seconds</string>
+    <string name="data_disabler_app_icon">Data Disabler App Icon</string>
 </resources>
