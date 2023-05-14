@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.example.disabledata'
+    namespace 'de.thedaandy.dataDisabler'
     compileSdk 33
 
     defaultConfig {
-        applicationId "com.example.disabledata"
+        applicationId 'de.thedaandy.dataDisabler'
         minSdk 26
         targetSdk 33
         versionCode 1

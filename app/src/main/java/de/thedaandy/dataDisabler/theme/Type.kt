@@ -1,4 +1,4 @@
-package com.example.disabledata.ui.theme
+package de.thedaandy.dataDisabler.ui.theme
 
 import androidx.compose.material3.Typography
 import androidx.compose.ui.text.TextStyle

@@ -1,4 +1,4 @@
-package com.example.disabledata
+package de.thedaandy.dataDisabler
 
 import org.junit.Test
 

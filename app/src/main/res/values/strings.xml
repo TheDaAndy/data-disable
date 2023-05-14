@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">disableData</string>
+    <string name="app_name">Data Disabler</string>
     <string name="delay_time">Delay Time</string>
     <string name="restore_previous_settings">Restore previous settings</string>
     <string name="enable_mobile_data_service">Enable Mobile-Data service</string>

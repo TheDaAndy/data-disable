@@ -1,4 +1,4 @@
-package com.example.disabledata
+package de.thedaandy.dataDisabler
 
 import android.content.BroadcastReceiver
 import android.content.Context

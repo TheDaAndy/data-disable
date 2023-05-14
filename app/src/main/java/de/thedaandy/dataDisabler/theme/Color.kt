@@ -1,4 +1,4 @@
-package com.example.disabledata.ui.theme
+package de.thedaandy.dataDisabler.ui.theme
 
 import androidx.compose.ui.graphics.Color
 

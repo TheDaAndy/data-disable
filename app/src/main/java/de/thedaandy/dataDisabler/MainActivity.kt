@@ -1,4 +1,4 @@
-package com.example.disabledata
+package de.thedaandy.dataDisabler
 
 import android.app.AlertDialog
 import android.content.Context
