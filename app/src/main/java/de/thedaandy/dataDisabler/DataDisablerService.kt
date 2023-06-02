@@ -28,10 +28,16 @@ class DataDisablerService : Service() {
     private var isWifiEnabledBeforeDisable = false
     private var isMobileDataEnabledBeforeDisable = false
 
+    private var screenUnlocked = true
+
     private val screenOffReceiver: BroadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
             val prefs = context.getSharedPreferences("de.thedaandy.data_disabler", Context.MODE_PRIVATE)
             if (intent.action == Intent.ACTION_SCREEN_OFF) {
+                if (!screenUnlocked) {
+                    return
+                }
+                screenUnlocked = false
 
                 // Save the current Wi-Fi and mobile data states
                 isWifiEnabledBeforeDisable = isWifiEnabled(context)
@@ -60,6 +66,7 @@ class DataDisablerService : Service() {
     private val screenUnlockReceiver: BroadcastReceiver = object : BroadcastReceiver() {
         override fun onReceive(context: Context, intent: Intent) {
             if (intent.action == Intent.ACTION_USER_PRESENT) {
+                screenUnlocked = true
                 timer?.cancel()
 
                 val prefs = context.getSharedPreferences("de.thedaandy.data_disabler", Context.MODE_PRIVATE)
