@@ -8,7 +8,7 @@ import android.content.Intent
 class BootCompletedWorker(context: Context, workerParams: WorkerParameters) : Worker(context, workerParams) {
     override fun doWork(): Result {
         val serviceIntent = Intent(applicationContext, DataDisablerService::class.java)
-        applicationContext.startService(serviceIntent)
+        applicationContext.startForegroundService(serviceIntent)
         return Result.success()
     }
 }
