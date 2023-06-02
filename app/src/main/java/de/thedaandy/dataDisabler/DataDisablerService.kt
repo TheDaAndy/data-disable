@@ -90,13 +90,8 @@ class DataDisablerService : Service() {
         val prefs = applicationContext.getSharedPreferences("de.thedaandy.data_disabler", Context.MODE_PRIVATE)
         val serviceEnabled = prefs.getBoolean("wlanDisablerEnabled", false)
                           || prefs.getBoolean("mobileDataDisablerEnabled", false)
-        val hasRoot = rootAvailable()
-        if (!serviceEnabled || !hasRoot) {
-            if (!hasRoot) {
-                handleSuFailure()
-            } else {
-                killForeground()
-            }
+        if (!serviceEnabled) {
+            killForeground()
             return START_NOT_STICKY
         } else {
             createNotificationChannel()
