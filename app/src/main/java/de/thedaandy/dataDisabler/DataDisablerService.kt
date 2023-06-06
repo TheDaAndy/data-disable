@@ -72,12 +72,12 @@ class DataDisablerService : Service() {
                 val prefs = context.getSharedPreferences("de.thedaandy.data_disabler", Context.MODE_PRIVATE)
                 if (prefs.getBoolean("restoreSettingsEnabled", false)) {
                     // Check if Wi-Fi was enabled before disabling and restore its state
-                    if (isWifiEnabledBeforeDisable) {
+                    if (isWifiEnabledBeforeDisable && prefs.getBoolean("wlanDisablerEnabled", false)) {
                         enableWifi()
                     }
 
                     // Check if mobile data was enabled before disabling and restore its state
-                    if (isMobileDataEnabledBeforeDisable) {
+                    if (isMobileDataEnabledBeforeDisable && prefs.getBoolean("mobileDataDisablerEnabled", false)) {
                         enableData()
                     }
                 }
